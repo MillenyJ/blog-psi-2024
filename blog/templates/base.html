@@ -1,42 +1,30 @@
 {% load static %}
 <!DOCTYPE html>
-
-<html lang="">
+<html lang="en">
 <head>
-<title>{% block title %}Inicio{% endblock %}</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href= "{% static 'style/css/layout.css' %}" rel="stylesheet" type="text/css" media="all">
-</head>
-{% block content %}
-{% endblock %}
-
-</body>
-
-      <footer id="footer" class="hoc clear">
-        <div class="center btmspace-50"> 
-          
-          <h6 class="heading">Fontes</h6>
-          <a class="nospace"href="https://www.todamateria.com.br/puberdade/">Site 1</a>
-          <a class="nospace"href="https://www.vittude.com/blog/puberdade-adolescencia-terapia-ajuda-mudancas/">Site 2</a>
-          <a class="nospace"href="https://acta-ape.org/article/problemas-emocionais-e-comportamentais-em-pre-adolescentes-classificados-como-recem-nascidos-de-risco/">Site 3</a>
-
-          
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Document {% endblock %}</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'estilo.css' %}">
+<body>
+    <header>
+        <div class="row align-items-start">
+            <div class="col">
+                <img src="img/logo-ifrn.png" class="img-fluid" alt="">
+            </div>
+            <div class="col">
+                <h4 class="info">Info Web 3M</h4>
+                <h5 class="info">Alunos: Eduardo Mauricio, Eugênio Urbano, Fernanda Liliam,</h5>
+                <h5 class="info"> Helloar Lavinia, Milleny Jamily e Thierry Henry</h5>
+            </div>
         </div>
-        <hr class="btmspace-50">
-      </footer>
-    </div>
-    <div class="wrapper row5">
-      <div id="copyright" class="hoc clear"> 
-        <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
-        <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
-      </div>
-    </div>
-    <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
-    <!-- JAVASCRIPTS -->
-    <script src="layout/scripts/jquery.min.js"></script>
-    <script src="layout/scripts/jquery.backtotop.js"></script>
-    <script src="layout/scripts/jquery.mobilemenu.js"></script>
- 
+    </header >
+    
+    
+    <script src="static/bootstrap.bundle.min.js"></script>
 </body>
+<footer>
+    <p ><a href="https://blog.dietbox.me/as-10-perguntas-mais-frequentes-sobre-nutricao/">Referencia</a></p>
+</footer>
 </html>
