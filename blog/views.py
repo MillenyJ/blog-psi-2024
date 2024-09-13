@@ -3,9 +3,9 @@ from .models import Post
 
 
 def index(request):
-    posts = Post.objects.all()
+    Posts = Post.objects.all()
     
     context ={
-        "posts" : posts,
+        "Posts" : Posts,
     }
     return render( request, 'index.html',context)
