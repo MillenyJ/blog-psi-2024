@@ -3,9 +3,22 @@ from .models import Post
 
 
 def index(request):
-    Posts = Post.objects.all()
+    posts = Post.objects.all()
     
     context ={
-        "Posts" : Posts,
+        "posts" : posts,
     }
+    
+    
+    
     return render( request, 'index.html',context)
+
+def postagem(request):
+    postagems = Post.objects()   
+     
+    context ={
+        "postagems" : postagems,
+    }
+    
+    return render( request, 'post.html',context)
+    

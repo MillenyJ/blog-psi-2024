@@ -36,3 +36,7 @@ footer{
     text-align: center;
     color: aliceblue;
 }
+
+#sla{
+    display:table-column;    
+}
