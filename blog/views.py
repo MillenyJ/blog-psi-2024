@@ -13,12 +13,6 @@ def index(request):
     
     return render( request, 'index.html',context)
 
-def postagem(request):
-    postagems = Post.objects()   
-     
-    context ={
-        "postagems" : postagems,
-    }
-    
-    return render( request, 'post.html',context)
-    
+def postagem(request, id):
+    post = Post.objects.all(Post, id=id)
+    return render(request, 'postagem.html', {'post': post})   
